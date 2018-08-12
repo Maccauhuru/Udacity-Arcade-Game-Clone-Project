@@ -26,13 +26,19 @@ class Enemy {
 		livesLeft.innerText = lives;
 
 		// Restarts enemy movement from the left when Player reaches the water
-		if (this.x > 505) {
-			this.x = -150;
+		if (this.x > 510) {
+			this.x = -50;
 			//Controls the enemy movement speed
 			//New Feature (levels): *400-600 easy *700+ for hard
-			this.movement = 150 + Math.floor(Math.random() * 800);
+			this.movement = 100 + Math.floor(Math.random() * 222);
 
 		}
+
+
+
+
+
+
 
 		// Checks collisons and restarts player at the bottom
 		if (player.x < this.x + 60 &&
